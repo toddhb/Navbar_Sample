@@ -1,0 +1,71 @@
+<!--
+Lytics Jr. Developer coding exercise
+Created by Todd Brochu on 8/23/2015.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lytics</title>
+    <script type="text/javascript" src="navbar.js"></script>
+    <link rel="stylesheet" href="navbar.scss"/>
+</head>  
+<body>
+    
+<div class="header">
+
+    <p class="logo">
+        <a href="https://github.com/toddhb?tab=repositories/">
+            <img src=assets/images/logo.png width="40" height="20" />
+        </a>
+    </p>
+    <p class="left-menu-items" href="#">PRODUCTS</p>
+    <p class="left-menu-items" href="#">SERVICES</p>
+    
+    <p class="user" href="#">
+        <script>document.write(getUserName())</script>
+    </p>
+    <ul id="menu">
+        <li>
+            <p class="list-heading" id="list-heading">
+                <script>document.write(getCurrentObjective())</script>    
+            </p>
+            <ul class="list">
+                <li>
+                    <a>WHAT IS YOUR CURRENT OBJECTIVE?</a>
+                </li>
+                <li onClick="toggleCheckmark('acquisition_check', 'ACQUISITION');">
+                    <a id="acquisition" href="#">
+                        <img id="acquisition_check" src=assets/images/check.png width="7" height="7" style="display:none;"/>
+                        ACQUISITION
+                    </a>
+                </li>
+                <li onClick="toggleCheckmark('activation_check', 'ACTIVATION');">
+                    <a id="activation" value="ACTIVATION" href="#">
+                        <img id="activation_check" src=assets/images/check.png width="7" height="7" style="display:none;"/>
+                        ACTIVATION
+                    </a>
+                </li>
+                <li onClick="toggleCheckmark('retention_check', 'RETENTION');">
+                    <a id="retention" value="RETENTION" href="#">
+                        <img id="retention_check" src=assets/images/check.png width="7" height="7" style="display:none;"/>
+                        RETENTION
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <a class="eye"  href="#">
+        <img src=assets/images/eye.png width="16" height="8" />
+    </a>
+    <a class="bell"  href="#">
+        <img src=assets/images/bell.png width="11" height="14" />
+    </a> 
+    <a class="circle" id="circle">
+        <script>document.write(showNotifications())</script>     
+    </a>
+    
+</div>
+    
+</body>
+</html>

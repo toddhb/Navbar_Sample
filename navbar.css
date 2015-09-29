@@ -1,0 +1,38 @@
+.header {
+  width: 100%;
+  height: 50px;
+  background-color: #44484e;
+  font-size: 10px;
+  color: #ffffff; }
+
+.logo {
+  position: relative;
+  margin-left: 15px;
+  margin-top: 15px;
+  float: left; }
+
+.left-menu-items {
+  float: left;
+  padding-left: 15px;
+  margin-top: 17px; }
+
+.user {
+  position: relative;
+  margin-right: 15px;
+  margin-top: 17px;
+  float: right; }
+
+.right-menu-items {
+  float: right;
+  padding-right: 15px;
+  margin-top: 17px; }
+
+.objectives {
+  background-color: #33363b;
+  color: #cccccc;
+  margin-top: 10px; }
+
+option:hover {
+  color: #0d7cab; }
+
+/*# sourceMappingURL=style.css.map */
